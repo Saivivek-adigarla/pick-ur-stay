@@ -1,0 +1,15 @@
+{
+  "name": "PickUrStay",
+  "short_name": "PickUrStay",
+  "description": "Book Smart • Travel Easy — India's Premium Hotel Booking Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EFF6FF",
+  "theme_color": "#2563EB",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "64x64", "type": "image/x-icon" },
+    { "src": "/placeholder.svg", "sizes": "192x192", "type": "image/svg+xml" },
+    { "src": "/placeholder.svg", "sizes": "512x512", "type": "image/svg+xml" }
+  ]
+}
