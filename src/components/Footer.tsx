@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Hotel, MapPin, Phone, Mail, Instagram, MessageCircle, Star, Facebook, Twitter } from "lucide-react";
 
 const Footer: React.FC = () => {
-  const whatsappNumber = "+919999999999";
-  const instagramUrl = "https://instagram.com/pickurstay";
+  const whatsappNumber = "+917036252018";
+  const instagramUrl = "https://www.instagram.com/pickurstayhotels";
 
   return (
     <footer className="border-t bg-card mt-16">
@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
                 href={instagramUrl} target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-xl bg-gradient-to-r from-pink-500 to-orange-400 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-lg"
               >
-                <Instagram className="h-4 w-4" />
-                @pickurstay
+              <Instagram className="h-4 w-4" />
+                @pickurstayhotels
               </a>
               <a
                 href={`https://wa.me/${whatsappNumber.replace(/\D/g, "")}`}
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
               India's premium hotel booking platform. Find your perfect stay from thousands of verified properties.
             </p>
             <div className="mt-4 flex gap-3">
-              <SocialBtn href="https://instagram.com/pickurstay" icon={<Instagram className="h-4 w-4" />} />
+              <SocialBtn href="https://www.instagram.com/pickurstayhotels" icon={<Instagram className="h-4 w-4" />} />
               <SocialBtn href="https://facebook.com/pickurstay" icon={<Facebook className="h-4 w-4" />} />
               <SocialBtn href="https://twitter.com/pickurstay" icon={<Twitter className="h-4 w-4" />} />
             </div>
@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
               </a>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
-                1800-PUR-STAY
+                7036252018
               </div>
               <div className="mt-4 flex items-center gap-1">
                 {[1,2,3,4,5].map(i => <Star key={i} className="h-4 w-4 fill-gold text-gold" />)}

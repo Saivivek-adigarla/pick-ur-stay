@@ -9,6 +9,7 @@ import AIChatbot from "@/components/AIChatbot";
 
 import Index from "./pages/Index";
 import Login from "./pages/Login";
+import Packages from "./pages/Packages";
 import Hotels from "./pages/Hotels";
 import HotelDetail from "./pages/HotelDetail";
 import Booking from "./pages/Booking";
@@ -38,6 +39,7 @@ const App = () => (
             {/* Public */}
             <Route path="/" element={<Index />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/packages" element={<Packages />} />
 
             {/* Redirect /dashboard based on role */}
             <Route path="/redirect" element={<DashboardRedirect />} />
