@@ -45,6 +45,7 @@ const Navbar: React.FC = () => {
           {user.role === "customer" && (
             <>
               <NavItem to="/hotels" icon={<Search className="h-4 w-4" />} label="Browse Hotels" active={location.pathname === "/hotels"} />
+              <NavItem to="/packages" label="Packages & Trips" active={location.pathname === "/packages"} />
               <NavItem to="/dashboard" icon={<LayoutDashboard className="h-4 w-4" />} label="My Bookings" active={location.pathname === "/dashboard"} />
             </>
           )}

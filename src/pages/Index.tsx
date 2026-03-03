@@ -63,8 +63,11 @@ const HomePage: React.FC = () => {
                   className="w-full rounded-xl bg-white/15 py-3 pl-10 pr-3 text-white placeholder:text-white/60 outline-none border border-white/20 focus:border-white/50"
                 />
               </div>
-              <button onClick={() => navigate("/login")} className="btn-primary py-3 px-8 rounded-xl">
+        <button onClick={() => navigate("/login")} className="btn-primary py-3 px-8 rounded-xl">
                 <Search className="h-4 w-4" /> Search Hotels
+              </button>
+              <button onClick={() => navigate("/packages")} className="flex items-center gap-2 bg-white/15 border border-white/30 text-white font-semibold py-3 px-6 rounded-xl backdrop-blur-sm hover:bg-white/25 transition-colors">
+                ✈️ View Packages
               </button>
             </div>
           </div>
