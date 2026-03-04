@@ -5,8 +5,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HotelCard from "@/components/HotelCard";
 import { MOCK_HOTELS } from "@/data/mockData";
-import { Search, Star, Shield, Headphones, MapPin, Instagram, ArrowRight, Hotel } from "lucide-react";
+import { Search, Star, Shield, Headphones, MapPin, Instagram, ArrowRight } from "lucide-react";
 import heroHotel from "@/assets/hero-hotel.jpg";
+import logo from "@/assets/logo.jpg";
 
 const HomePage: React.FC = () => {
   const { user } = useAuth();
@@ -41,13 +42,16 @@ const HomePage: React.FC = () => {
         <img src={heroHotel} alt="Luxury hotel" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/85 via-primary/70 to-accent/50" />
         <div className="relative container mx-auto px-4 py-20 text-center text-white">
-          <div className="animate-fade-up">
+            <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-2 text-sm font-medium backdrop-blur-sm mb-6">
               <span className="h-2 w-2 rounded-full bg-success animate-pulse" />
               500+ verified hotels · Book with confidence
             </div>
+            <div className="flex justify-center mb-5">
+              <img src={logo} alt="PickUrStay Hotels & Travels" className="h-20 w-auto object-contain drop-shadow-lg" />
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-              Book Smart<br /><span className="text-sky">Travel Easy</span>
+              Stay • Travel<br /><span className="text-sky">Manage</span>
             </h1>
             <p className="text-white/85 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
               Discover India's finest hotels — from beachfront resorts to mountain retreats, heritage palaces to city towers.
@@ -164,7 +168,7 @@ const HomePage: React.FC = () => {
       {/* CTA */}
       <section className="cta-gradient py-16 px-4">
         <div className="container mx-auto max-w-2xl text-center text-white">
-          <Hotel className="h-12 w-12 mx-auto mb-4 animate-float" />
+          <img src={logo} alt="PickUrStay" className="h-16 w-auto object-contain mx-auto mb-4" />
           <h2 className="text-3xl font-bold mb-3">Ready to Book Your Dream Stay?</h2>
           <p className="text-white/80 mb-6">Join 50,000+ happy travelers who trust PickUrStay</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
