@@ -147,7 +147,7 @@ const HomePage: React.FC = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[MOCK_HOTELS[0].image, MOCK_HOTELS[1].image, MOCK_HOTELS[2].image, MOCK_HOTELS[3].image].map((img, i) => (
-              <a key={i} href="https://instagram.com/pickurstay" target="_blank" rel="noopener noreferrer"
+              <a key={i} href="https://www.instagram.com/pickurstayhotels" target="_blank" rel="noopener noreferrer"
                 className="group relative aspect-square rounded-2xl overflow-hidden">
                 <img src={img} alt="Travel inspiration" className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110" />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/30 transition-colors duration-300">
@@ -157,9 +157,9 @@ const HomePage: React.FC = () => {
             ))}
           </div>
           <div className="text-center mt-6">
-            <a href="https://instagram.com/pickurstay" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.instagram.com/pickurstayhotels" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-pink-500 to-orange-400 px-6 py-3 font-semibold text-white hover:-translate-y-0.5 hover:shadow-lg transition-all">
-              <Instagram className="h-4 w-4" /> Follow @pickurstay
+              <Instagram className="h-4 w-4" /> Follow @pickurstayhotels
             </a>
           </div>
         </div>
