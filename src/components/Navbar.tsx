@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
 import {
-  Hotel, Search, Bell, Menu, X, LogOut, User, LayoutDashboard,
-  Settings, ChevronDown, MapPin
+  Search, Bell, Menu, X, LogOut, User, LayoutDashboard,
+  Settings, ChevronDown, Instagram
 } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Navbar: React.FC = () => {
   const { user, logout } = useAuth();
@@ -32,13 +33,13 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link to={getDashboardLink()} className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg cta-gradient">
-            <Hotel className="h-4 w-4 text-white" />
-          </div>
-          <div>
-            <span className="text-lg font-bold text-gradient">PickUrStay</span>
-          </div>
+          <img src={logo} alt="PickUrStay Hotels & Travels" className="h-10 w-auto object-contain" />
         </Link>
+        {/* Instagram in header */}
+        <a href="https://www.instagram.com/pickurstayhotels" target="_blank" rel="noopener noreferrer"
+          className="hidden md:flex h-9 w-9 items-center justify-center rounded-full hover:bg-muted transition-colors text-pink-500 ml-1">
+          <Instagram className="h-5 w-5" />
+        </a>
 
         {/* Desktop Nav Links */}
         <div className="hidden items-center gap-1 md:flex">

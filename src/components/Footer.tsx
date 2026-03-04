@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Hotel, MapPin, Phone, Mail, Instagram, MessageCircle, Star, Facebook, Twitter } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, MessageCircle, Star, Facebook, Twitter } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Footer: React.FC = () => {
   const whatsappNumber = "+917036252018";
@@ -41,15 +42,9 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl cta-gradient">
-                <Hotel className="h-5 w-5 text-white" />
-              </div>
-              <div>
-                <div className="text-xl font-bold text-gradient">PickUrStay</div>
-                <div className="text-xs text-muted-foreground">Book Smart • Travel Easy</div>
-              </div>
-            </div>
+          <div className="flex items-center gap-2 mb-4">
+            <img src={logo} alt="PickUrStay Hotels & Travels" className="h-12 w-auto object-contain" />
+          </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               India's premium hotel booking platform. Find your perfect stay from thousands of verified properties.
             </p>

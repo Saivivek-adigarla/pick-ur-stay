@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
-import { Hotel, Eye, EyeOff, Mail, Lock, User, ArrowRight, CheckCircle } from "lucide-react";
+import { Eye, EyeOff, Mail, Lock, User, ArrowRight, CheckCircle } from "lucide-react";
 import heroHotel from "@/assets/hero-hotel.jpg";
+import logo from "@/assets/logo.jpg";
 
 const Login: React.FC = () => {
   const [mode, setMode] = useState<"login" | "signup">("login");
@@ -45,13 +46,10 @@ const Login: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary/60 to-accent/40" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-12">
           <div className="max-w-lg text-center">
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-sm">
-                <Hotel className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-3xl font-bold">PickUrStay</span>
+          <div className="flex items-center justify-center mb-6">
+              <img src={logo} alt="PickUrStay Hotels & Travels" className="h-20 w-auto object-contain drop-shadow-lg" />
             </div>
-            <h1 className="text-4xl font-bold mb-4 leading-tight">Book Smart • Travel Easy</h1>
+            <h1 className="text-4xl font-bold mb-4 leading-tight">Stay • Travel • Manage</h1>
             <p className="text-white/80 text-lg mb-8">Discover premium hotels across India's most beautiful destinations.</p>
             <div className="grid grid-cols-3 gap-4">
               {[
@@ -75,10 +73,7 @@ const Login: React.FC = () => {
         <div className="w-full max-w-md">
           {/* Mobile Logo */}
           <div className="flex items-center gap-2 mb-8 lg:hidden">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl cta-gradient">
-              <Hotel className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-2xl font-bold text-gradient">PickUrStay</span>
+            <img src={logo} alt="PickUrStay Hotels & Travels" className="h-10 w-auto object-contain" />
           </div>
 
           <h2 className="text-2xl font-bold mb-1">{mode === "login" ? "Welcome back! 👋" : "Create your account 🚀"}</h2>
