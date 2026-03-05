@@ -65,13 +65,14 @@ export default {
   			success: 'hsl(var(--success))',
   			danger: 'hsl(var(--danger))'
   		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)',
-  			'2xl': '1rem',
-  			'3xl': '1.5rem'
-  		},
+  	borderRadius: {
+  		lg: 'var(--radius)',
+  		md: 'calc(var(--radius) - 2px)',
+  		sm: 'calc(var(--radius) - 4px)',
+  		xl: 'calc(var(--radius) + 4px)',
+  		'2xl': '1rem',
+  		'3xl': '1.5rem'
+  	},
   		fontFamily: {
   			sans: [
   				'Space Grotesk',
