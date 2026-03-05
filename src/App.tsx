@@ -7,7 +7,7 @@ import { AuthProvider, useAuth } from "@/contexts/AuthContext";
 import { ProtectedRoute } from "@/components/ProtectedRoute";
 import AIChatbot from "@/components/AIChatbot";
 
-import Index from "./pages/Index";
+import Welcome from "./pages/Welcome";
 import Login from "./pages/Login";
 import Packages from "./pages/Packages";
 import Hotels from "./pages/Hotels";
@@ -25,7 +25,7 @@ const DashboardRedirect = () => {
   if (!user) return <Navigate to="/login" replace />;
   if (user.role === "admin") return <Navigate to="/admin" replace />;
   if (user.role === "hotelOwner") return <Navigate to="/owner" replace />;
-  return <Navigate to="/dashboard" replace />;
+  return <Navigate to="/hotels" replace />;
 };
 
 const App = () => (
@@ -36,12 +36,12 @@ const App = () => (
       <BrowserRouter>
         <AuthProvider>
           <Routes>
-            {/* Public */}
-            <Route path="/" element={<Index />} />
+            {/* Public welcome page */}
+            <Route path="/" element={<Welcome />} />
             <Route path="/login" element={<Login />} />
             <Route path="/packages" element={<Packages />} />
 
-            {/* Redirect /dashboard based on role */}
+            {/* Role-based redirect */}
             <Route path="/redirect" element={<DashboardRedirect />} />
 
             {/* Customer */}
